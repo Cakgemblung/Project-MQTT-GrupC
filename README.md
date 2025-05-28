@@ -42,24 +42,25 @@ Proyek ini mengimplementasikan fitur-fitur MQTT berikut:
 
 ## Struktur Direktori Proyek
 
+```
 mqtt-project/
-├── .vscode/ # Konfigurasi VS Code (opsional)
+├── .vscode/                 # Konfigurasi VS Code (opsional)
 ├── notifier_client/
-│ └── main.py # Kode Notifier Client (Subscriber)
+│   └── main.py              # Kode Notifier Client (Subscriber)
 ├── sensor_simulator/
-│ └── main.py # Kode Sensor Simulator (Publisher)
+│   └── main.py              # Kode Sensor Simulator (Publisher)
 ├── shared/
-│ ├── init.py
-│ ├── ca.crt # Sertifikat CA untuk TLS
-│ └── mqtt_config.py # Konfigurasi MQTT bersama
-├── venv/ # Virtual environment Python
-├── .env # Kredensial MQTT (JANGAN COMMIT)
-├── .gitignore # File untuk mengecualikan file dari Git
-├── mosquitto.conf # Konfigurasi Mosquitto
-├── passwdfile # File password Mosquitto
-├── requirements.txt # Dependensi Python
-└── README.md # File ini
-
+│   ├── __init__.py
+│   ├── ca.crt               # Sertifikat CA untuk TLS
+│   └── mqtt_config.py       # Konfigurasi MQTT bersama
+├── venv/                    # Virtual environment Python
+├── .env                     # Kredensial MQTT (JANGAN DI-COMMIT)
+├── .gitignore               # Mengecualikan file dari Git
+├── mosquitto.conf           # Konfigurasi Mosquitto
+├── passwdfile               # File password Mosquitto
+├── requirements.txt         # Dependensi Python
+└── README.md                # Dokumentasi proyek
+```
 
 ## Setup dan Instalasi
 
@@ -114,3 +115,9 @@ python sensor_simulator/main.py
 # Terminal 2
 python notifier_client/main.py
 ```
+
+### SCREENSHOOT
+
+![image](https://github.com/user-attachments/assets/8a05e969-6c54-43c1-be63-f1dcc6a8d474)
+![image](https://github.com/user-attachments/assets/a15d6764-5753-4b9b-a06e-eded9d1dfc3a)
+
